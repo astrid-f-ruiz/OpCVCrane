@@ -1,0 +1,26 @@
+{
+    "profile_type": "stationary_noise_profile",
+    "format_version": 1,
+    "created_by": "analyze_data_windows_S2_updated.py",
+    "n_samples_total": 7308,
+    "n_theta_valid": 7308,
+    "n_vx_valid": 7308,
+    "n_x_valid": 7308,
+    "time_start_s": 0.0,
+    "time_end_s": 30.448749600893997,
+    "theta_mean_deg": 0.011277407121359674,
+    "theta_std_deg": 0.10318636388815867,
+    "theta_maxabs_deg": 0.27456679662674316,
+    "theta_ptp_deg": 0.4513018203603143,
+    "vx_std_in_s": 0.28004565949430704,
+    "vx_maxabs_in_s": 0.9994291426503589,
+    "x_std_in": 0.018573951624817186,
+    "notes": "Use theta_mean_deg only as a constant bias correction. Do not subtract any stationary waveform.",
+    "meta": {
+        "config_path": "D:\\Documents\\F25_real\\OpenCV Test\\Test Videos\\Noise_Test",
+        "raw_csv_path": "D:\\Documents\\F25_real\\OpenCV Test\\Test Videos\\Noise_Test_RAW",
+        "theta_zero_method": "late_window",
+        "theta_bias_deg": -0.01120521445013581,
+        "velocity_smoothing_method_used": "savgol"
+    }
+}
