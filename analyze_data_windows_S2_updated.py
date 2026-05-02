@@ -1513,7 +1513,7 @@ def compute_placement_metrics(time_s, measured_x_in, ideal_x_in, move_end_s, goa
         "placement_error_mean_poststop_in": float(np.nanmean(vals)),
         "placement_error_maxabs_poststop_in": maxabs,
         "placement_goal_in": float(goal_in),
-        "placement_pass": int(meanp <= float(goal_in)),
+        "placement_pass": int(abs(meanp) <= float(goal_in)),
         "placement_n_poststop_samples": int(vals.size),
         "placement_method": "tracked_minus_ideal_poststop"
     }
