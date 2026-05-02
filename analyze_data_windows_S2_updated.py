@@ -2095,6 +2095,9 @@ def main():
     move_start_position_s = move_start_detected_s
     move_end_position_s = move_end_detected_s
     
+    move_start_vel_s = move_start_detected_s
+    move_end_vel_s = move_end_detected_s
+    
     # Manual position-window adjustment.
     # This is intentionally only for idealized position and placement accuracy.
     use_manual_position_window_adjustment = True
@@ -2102,8 +2105,9 @@ def main():
     if use_manual_position_window_adjustment and not no_motion_detected:
         move_start_position_s = move_start_position_s + (0.00 * move_start_position_s)
         move_end_position_s = move_end_position_s + (0.00* move_end_position_s)
-        move_start_vel_s = move_start_position_s + (0.0 * move_start_position_s)
-        move_end_vel_s = move_end_position_s - (0.0 * move_end_position_s)
+        
+        move_start_vel_s = move_start_vel_s + (0.0 * move_start_position_s)
+        move_end_vel_s = move_end_vel_s - (0.0 * move_end_position_s)
     
         print("\nManual position-window adjustment applied:")
         print(f"  theta/settling move_start_s       : {move_start_theta_s:.6f}")
