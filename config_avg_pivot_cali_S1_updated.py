@@ -1103,8 +1103,8 @@ def main():
     green_hsv = build_hsv_range_from_patch(
     green_patch,
     hue_pad=18,
-    sat_pad=120,
-    val_pad=90
+    sat_pad=60,
+    val_pad=60
 )
 
     # --------------------------------------------------------
